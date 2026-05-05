@@ -20,8 +20,10 @@ cd ddrm
 
 DDRM provides its own environment file:
 
-```conda env create -f environment.yml
-conda activate ddrm```
+```
+conda env create -f environment.yml
+conda activate ddrm
+```
 
 Depending on the machine or cluster setup, additional package/version adjustments may be required.
 
@@ -31,7 +33,8 @@ The DDRM experiments are run from inside the cloned DDRM directory using its mai
 
 A typical command structure is:
 
-```python main.py \
+```
+python main.py \
   --ni \
   --config imagenet_256.yml \
   --doc <experiment_name> \
@@ -40,7 +43,8 @@ A typical command structure is:
   --etaB 1 \
   --deg deblur_gauss \
   --sigma_0 <noise_value> \
-  -i <run_name>```
+  -i <run_name>
+```
 
 The value passed to --timesteps controls the number of diffusion restoration steps. In this project, multiple values were tested to estimate the per-image required step count.
 
