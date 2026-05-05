@@ -1,0 +1,53 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Data files and datasets
+data/*
+!data/.gitkeep
+!data/README.md
+
+# External cloned repositories / external models
+external/*
+!external/.gitkeep
+!external/README.md
+
+# Notebook artifacts that should not be pushed
+notebooks/checkpoints/*
+!notebooks/checkpoints/.gitkeep
+
+notebooks/human_evals/*
+!notebooks/human_evals/.gitkeep
+
+notebooks/results csv files/*
+!notebooks/results csv files/.gitkeep
+
+notebooks/human_eval.ipynb
+
+# CSV result files
+*.csv
+
+# Common large model/checkpoint/data files
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+*.joblib
+*.npy
+*.npz
+*.zip
+*.tgz
+*.tar
+*.tar.gz
